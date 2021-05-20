@@ -1,1 +1,1 @@
-# Vanilla-ResNet
+# ResNet
