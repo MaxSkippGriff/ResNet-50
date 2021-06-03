@@ -29,8 +29,7 @@ class block(nn.Module):
         x = self.conv3(x)
         x = self.bn3(x)
 
-        # We use identity downsample layer if
-        # we need to change the shape
+        # Use identity downsample layer to change the shape
         if self.identity_downsample is not None:
             identity = self.identity_downsample(identity)
         
