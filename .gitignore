@@ -1,23 +1,51 @@
-# Compiled class file
-*.class
+###################################
+# General ignore patterns
+###################################
 
-# Log file
-*.log
+build/
+obj/
+*.o
+Debug*/
+Release*/
+*.mode*
+*.app/
+*.pyc
+.svn/
 
-# BlueJ files
-*.ctxt
+###################################
+# IDE specific
+###################################
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# XCode
+*.pbxuser
+*.perspective
+*.perspectivev3
+*.mode1v3
+*.mode2v3
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
+# XCode 4
+xcuserdata
+*.xcworkspace
+
+# Code::Blocks
+*.depend
+*.layout
+
+# Visual Studio
+*.sdf
+*.opensdf
+*.suo
+ipch/
+
+# Eclipse
+.metadata
+local.properties
+.externalToolBuilders
+
+
+###################################
+# OS Specific
+###################################
 
 # Linux
 *~
@@ -29,7 +57,75 @@
 .DS_Store
 *.swp
 *~.nib
+# Thumbnails
+._*
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-.idea
+# Windows
+# Windows image file caches
+Thumbs.db
+# Folder config file
+Desktop.ini
+
+# Android
+.csettings
+/libs/openFrameworksCompiled/project/android/paths.make
+
+###################################
+# Misc filetypes
+###################################
+
+.mailmap
+*.mov
+
+###################################
+# EAGLE Cad
+###################################
+
+# Backup files
+*.s#?
+*.b#?
+*.l#?
+# Eagle project file
+# It contains a serial number and references to the file structure
+# on your computer.
+# comment the following line if you want to have your project file included.
+#eagle.epf
+# CAM files
+*.$$$
+*.cmp
+*.ly2
+*.l15
+*.sol
+*.plc
+*.stc
+*.sts
+*.crc
+*.crs
+*.dri
+*.drl
+*.gpi
+*.pls
+*.drd
+*.drd.*
+*.info
+*.eps
+
+###################################
+# Node.js
+###################################
+
+**/node_modules
+lib-cov
+lcov.info
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+pids
+logs
+results
+build
+.grunt
